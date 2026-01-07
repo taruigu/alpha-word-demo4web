@@ -4,11 +4,7 @@ class CustomFooter extends HTMLElement {
         this.shadowRoot.innerHTML = `
             <style>
                 :host {
-                    display: block;
-                    background-color: #0c4a6e;
-                    color: white;
-                    padding: 3rem 1.5rem;
-                    font-family:
+                    --font-base:
                         -apple-system,
                         BlinkMacSystemFont,
                         'PingFang SC',
@@ -17,6 +13,14 @@ class CustomFooter extends HTMLElement {
                         'Noto Sans CJK SC',
                         Arial,
                         sans-serif;
+                
+                    font-family: var(--font-base);
+                }
+                :host {
+                    display: block;
+                    background-color: #0c4a6e;
+                    color: white;
+                    padding: 3rem 1.5rem;
                 }
                 
                 .footer-container {
@@ -173,3 +177,4 @@ class CustomFooter extends HTMLElement {
 
 
 customElements.define('custom-footer', CustomFooter);
+
