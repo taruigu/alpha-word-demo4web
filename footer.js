@@ -111,7 +111,11 @@ class CustomFooter extends HTMLElement {
                         BrainyWords
                     </a>
                     <p class="footer-description">
-                        结合神经科学和人工智能技术，帮助您更快学习词汇并形成长期记忆。
+                        <script>
+                            const tpl = document.getElementById('footer-i18n');
+                            this.shadowRoot.appendChild(tpl.content.cloneNode(true));
+                        </script>
+                        //**结合神经科学和人工智能技术，帮助您更快学习词汇并形成长期记忆。 */
                     </p>
                     <div class="language-switcher flex mt-4">
                         <a href="/index.html" class="text-sm text-gray-400 hover:text-white mr-2">English</a>
@@ -177,4 +181,5 @@ class CustomFooter extends HTMLElement {
 
 
 customElements.define('custom-footer', CustomFooter);
+
 
