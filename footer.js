@@ -8,6 +8,15 @@ class CustomFooter extends HTMLElement {
                     background-color: #0c4a6e;
                     color: white;
                     padding: 3rem 1.5rem;
+                    font-family:
+                        -apple-system,
+                        BlinkMacSystemFont,
+                        'PingFang SC',
+                        'Hiragino Sans GB',
+                        'Microsoft YaHei',
+                        'Noto Sans CJK SC',
+                        Arial,
+                        sans-serif;
                 }
                 
                 .footer-container {
@@ -98,12 +107,12 @@ class CustomFooter extends HTMLElement {
                         BrainyWords
                     </a>
                     <p class="footer-description">
-                        ½áºÏÉñ¾­¿ÆÑ§ºÍÈË¹¤ÖÇÄÜ¼¼Êõ£¬°ïÖúÄú¸ü¿ìÑ§Ï°´Ê»ã²¢ĞÎ³É³¤ÆÚ¼ÇÒä¡£
+                        ç»“åˆç¥ç»ç§‘å­¦å’Œäººå·¥æ™ºèƒ½æŠ€æœ¯ï¼Œå¸®åŠ©æ‚¨æ›´å¿«å­¦ä¹ è¯æ±‡å¹¶å½¢æˆé•¿æœŸè®°å¿†ã€‚
                     </p>
                     <div class="language-switcher flex mt-4">
                         <a href="/index.html" class="text-sm text-gray-400 hover:text-white mr-2">English</a>
                         <span class="text-gray-400">|</span>
-                        <a href="/index-cn.html" class="text-sm text-white font-medium ml-2">ÖĞÎÄ</a>
+                        <a href="/index-cn.html" class="text-sm text-white font-medium ml-2">ä¸­æ–‡</a>
                     </div>
 <div class="social-links">
                         <a href="#" class="social-link">
@@ -161,5 +170,6 @@ class CustomFooter extends HTMLElement {
         feather.replace();
     }
 }
+
 
 customElements.define('custom-footer', CustomFooter);
