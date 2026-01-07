@@ -44,7 +44,37 @@
     </script>
 </head>
 <body class="bg-gradient-to-br from-primary-50 to-secondary-50 min-h-screen flex flex-col">
-    <custom-navbar></custom-navbar>
+    <custom-navbar>
+        <template id="navbar-cn">
+          <a href="#features" class="nav-link">功能</a>
+          <a href="#how-it-works" class="nav-link">工作原理</a>
+          <a href="#start-learning" class="nav-link">开始学习</a>
+          <a href="#" class="nav-link">价格</a>
+        
+          <div class="language-switcher flex items-center ml-4">
+            <a href="index.html" class="text-sm text-gray-600">EN</a>
+            <span class="mx-1 text-gray-400">/</span>
+            <a href="index-cn.html" class="text-sm font-medium text-primary-600">中文</a>
+          </div>
+        
+          <a href="#" class="cta-button">登录</a>
+        </template>
+        
+        <template id="navbar-cn-mobile">
+          <a href="#features" class="mobile-nav-link">功能</a>
+          <a href="#how-it-works" class="mobile-nav-link">工作原理</a>
+          <a href="#start-learning" class="mobile-nav-link">开始学习</a>
+          <a href="#" class="mobile-nav-link">价格</a>
+        
+          <div class="language-switcher flex justify-center my-2">
+            <a href="index.html" class="text-sm text-gray-600">EN</a>
+            <span class="mx-1 text-gray-400">/</span>
+            <a href="index-cn.html" class="text-sm font-medium text-primary-600">中文</a>
+          </div>
+        
+          <a href="#" class="cta-button inline-block text-center">登录</a>
+        </template>
+    </custom-navbar>
     
     <main class="flex-grow container mx-auto px-4 py-8">
         <section class="hero-section mb-16">
@@ -295,5 +325,6 @@
     </script>
 </body>
 </html>
+
 
 
